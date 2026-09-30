@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Concorso fotografico</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --sfondo: #fbf9f4;
+    --testo: #2c2a24;
+    --testo-tenue: #6b6659;
+    --accento: #6d7f3f;
+    --bordo: #ddd6c5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sfondo: #1b1a17;
+      --testo: #f0ece2;
+      --testo-tenue: #a8a293;
+      --accento: #a8bd6c;
+      --bordo: #3a382f;
+    }
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 3rem 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    text-align: center;
+    font: 16px/1.65 Georgia, "Times New Roman", serif;
+    background: var(--sfondo);
+    color: var(--testo);
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 8vw, 3.6rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  .sottotitolo {
+    margin: 1.1rem auto 0;
+    max-width: 30rem;
+    font-size: clamp(1rem, 3.4vw, 1.2rem);
+    font-style: italic;
+    color: var(--testo-tenue);
+  }
+  .download {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid var(--bordo);
+    border-radius: 6px;
+    color: var(--accento);
+    text-decoration: none;
+    font-size: 1.05rem;
+  }
+  .download:hover { border-color: var(--accento); }
+  .peso {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--testo-tenue);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Concorso fotografico</h1>
+    <p class="sottotitolo">Anno Internazionale dei pascoli e dei pastori e delle donne in agricoltura</p>
+  </header>
+
+  <p>
+    <a class="download" href="Pierre_Prinetti.zip" download>Scarica le fotografie (ZIP)</a>
+    <span class="peso">Pierre_Prinetti.zip — 5 fotografie, 23 MB</span>
+  </p>
+</body>
+</html>
